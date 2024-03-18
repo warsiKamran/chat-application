@@ -3,7 +3,7 @@ import mongoose, { Schema } from "mongoose";
 const schema = new Schema({
 
     status: {
-        type: Schema.Types.ObjectId,
+        type: String,
         default: "pending",
         enum: ["pending", "accepted", "rejected"],
     },
